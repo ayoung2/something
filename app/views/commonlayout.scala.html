@@ -1,0 +1,98 @@
+<html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+
+        .divliner{
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 1500px;
+        width: 100%;
+
+        }
+        .blackbar{
+            height: 50px;
+        }
+
+        .header{
+        background: url(@routes.Assets.at("images/cyanbg.jpg")) no-repeat;
+        height: 150px;
+        background-size: 100% 150px;
+        }
+
+         h3.textshadow {
+         text-shadow: 1% 1% #194319 ;
+          }
+
+          a:hover{
+         color: teal;
+         }
+
+
+        .logo{
+        height: 209px;
+        width: 316px ;
+        min-height:209px ;
+            min-width: 316px;
+        }
+        .blackboard{
+            background: url(@routes.Assets.at("images/blackboardbg.jpg")) no-repeat;
+            opacity: 0.4;
+
+        }
+
+
+    </style>
+
+    <title>Layout</title>
+
+    <body>
+        <div class="divliner">
+       <img class="divliner blackbar" src='@routes.Assets.at("images/blackbar.jpg")'></div>
+      <div class="row divliner header">
+          <div class="container" style="width: 100%; height: 120px"> </div>
+
+
+          <div class="divliner row-fluid">
+          <div class="row " style="width:500px; height: 30px; min-width: 500px ;margin-left: 850px; margin-right: 120px">
+
+
+
+
+              <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1 " style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Home</h3></a>
+              <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">About</h3></a>
+              <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Services</h3></a>
+              <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Contacts</h3></a>
+            </div>
+
+            </div>
+              <!--
+                    <a href="http://www.google.com"><h3 class="textshadow offset1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Home</h3></a>
+                    <a href="http://www.google.com"><h3 class="textshadow offset1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">About</h3></a>
+
+
+                </div>   -->
+
+
+        </div>
+
+        <img class="logo" src='@routes.Assets.at("images/logo.png")' style="position:absolute;top: 70px; left:10px">
+
+        <div><img class="divliner" src='@routes.Assets.at("images/blackbar.jpg")' style="height: 10px"></div>
+        <div class="divliner blackboard container" style="padding-left: 0px; padding-right: 0px;padding-bottom: 0px;width:100%;height: 100% ;min-width: 1500px ">
+
+
+
+
+
+        </div>
+
+    </body>
+
+</html>

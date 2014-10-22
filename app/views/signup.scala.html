@@ -1,0 +1,176 @@
+<html>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+
+    .divliner{
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 1500px;
+    width: 100%;
+
+    }
+    .blackbar{
+    height: 50px;
+    }
+
+    .header{
+    background: url(@routes.Assets.at("images/cyanbg.jpg")) no-repeat;
+    height: 150px;
+    background-size: 100% 150px;
+    }
+
+    h3.textshadow {
+    text-shadow: 1% 1% #194319 ;
+    }
+
+    a:hover {
+    color : teal ;
+    }
+
+    .logo{
+    height: 209px;
+    width: 316px ;
+    min-height:209px ;
+    min-width: 316px;
+    }
+    .blackboard{
+    background: url(@routes.Assets.at("images/reducedOpacBlackBoard.png")) no-repeat;
+        background-size: 100% 100%;
+
+
+    }
+
+    .chalkslate{
+    background: url(@routes.Assets.at("images/chalkslate.png")) no-repeat;
+    opacity: 1.0;
+    background-size: 100% 100%;
+
+    }
+
+
+
+    </style>
+
+    <title>Layout</title>
+
+    <body>
+        <div class="divliner">
+            <img class="divliner blackbar" src='@routes.Assets.at("images/blackbar.jpg")'></div>
+        <div class="row divliner header">
+            <div class="container" style="width: 100%; height: 120px"> </div>
+
+
+            <div class="divliner row-fluid">
+                <div class="row " style=" width:500px; height: 30px; min-width: 500px ;margin-left: 850px; margin-right: 120px">
+
+
+
+
+                    <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1 " style="font-style: italic; font-family:bold ; display: inline; color: #003a1d">Home</h3></a>
+                    <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">About</h3></a>
+                    <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Services</h3></a>
+                    <a href="http://www.google.com"><h3 class="textshadow col-lg-offset-1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Contacts</h3></a>
+                </div>
+
+            </div>
+
+                <!--
+                    <a href="http://www.google.com"><h3 class="textshadow offset1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">Home</h3></a>
+                    <a href="http://www.google.com"><h3 class="textshadow offset1" style="font-style: italic; font-family:bold; display: inline; color: #003a1d">About</h3></a>
+
+
+                </div>   -->
+
+
+        </div>
+
+        <img class="logo" src='@routes.Assets.at("images/logo.png")' style="position:absolute;top: 70px; left:10px">
+
+        <div><img class="divliner" src='@routes.Assets.at("images/blackbar.jpg")' style="height: 10px"></div>
+        <div class="divliner blackboard container" style="padding-left: 0px; padding-right: 0px;padding-bottom: 0px;width:100%;min-height: 100% ;min-width: 1500px">
+
+
+            <div class="chalkslate col-lg-4 col-lg-offset-4 chalkslate " style=" background-color: lightgrey ;max-width:600px;  margin-top: 100px; height: 900px">
+
+                <div class="container" style="height: 50px; width: 100%" ></div>
+                <div class="container" style="height: 500px; width: 400px">
+                    <div > <strong><h1 style="margin-top: 40px ;color: #f5f5f5; font-size: 80px; margin-left: 50px ;font-family: 'Trebuchet MS, Verdana, Geneva, Arial, Helvetica, sans-serif'">Sign Up</h1></strong></div>
+                    <br>
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="exampleInputPasswordConfirmation">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPasswordConfirmation" placeholder="Confirm Password">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label style="color: #f5f5f5" for="role">Choose Role</label><br>
+                            <input type="radio" name="user" value="student"><label style="color: #f5f5f5">Student</label><br>
+                            <input type="radio" name="user" value="contentManager"><label style="color: #f5f5f5">Content Manager</label><br>
+                            <input type="radio" name="user" value="Administrator"><label style="color: #f5f5f5">Administrator</label><br><br>
+
+                            </div>
+
+                        <button type="submit" style="margin-left: 50px;margin-right: 50px" class="btn btn-default"><label style="color: #000000; display: inline" >Submit</label></button>
+
+                        <button type="submit" style="margin-left: 50px;margin-right: 50px" class="btn btn-default"><label style="color: #000000; display: inline">Cancel</label></button>
+
+
+
+
+        <!--
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Check me out
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+        -->
+                    </form>
+
+                 </div>
+
+            </div>
+
+
+        </div>
+
+    </body>
+
+</html>
